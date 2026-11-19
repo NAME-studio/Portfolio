@@ -365,6 +365,15 @@
     .float-card{animation:none}
   }
 </style>
+<link rel="canonical" href="https://name-studio.github.io/Portfolio/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NAME — портфолио">
+<meta property="og:description" content="Сайты и приложения: кофейня, барбершоп, репетитор, лаунчер Minecraft, редактор пиксель-арта.">
+<meta property="og:url" content="https://name-studio.github.io/Portfolio/">
+<meta property="og:image" content="https://name-studio.github.io/Portfolio/avatar.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NAME — портфолио">
+<meta name="twitter:description" content="Сайты и приложения: кофейня, барбершоп, репетитор, лаунчер Minecraft.">
 </head>
 <body>
 
@@ -398,7 +407,7 @@
       </div>
     </div>
     <div class="hero-visual reveal reveal-d2">
-      <div class="float-card fc-1"><div class="fc-avatar"><img src="avatar.jpg" alt=""></div><div class="fc-label">Проектов готово</div><div class="fc-value">03</div></div>
+      <div class="float-card fc-1"><div class="fc-avatar"><img src="avatar.jpg" alt="Аватар Ярослава" width="56" height="56" loading="lazy"></div><div class="fc-label">Проектов готово</div><div class="fc-value">03</div></div>
       <div class="float-card fc-2"><div class="fc-label">Скорость загрузки</div><div class="fc-value">0.4<small>s</small></div><div class="fc-bar"></div></div>
       <div class="float-card fc-3">
         <div class="fc-label">Статус</div>
@@ -593,6 +602,44 @@
   </div>
 </section>
 
+
+<section id="apps">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="section-label"><span class="dot"></span> Приложения</div>
+      <h2 class="section-title">Не только <em>сайты</em>.</h2>
+      <p class="section-desc">Два приложения на Electron для Windows: лаунчер Minecraft со сборками и редактор пиксель-арта. Оба бесплатны и с открытым кодом.</p>
+    </div>
+    <div class="apps">
+      <a class="app-card reveal" href="https://github.com/NAME-studio/kubik-launcher" target="_blank" rel="noopener">
+        <div class="app-top"><span class="app-tag">Electron · Windows</span><span class="app-arrow">↗</span></div>
+        <h3 class="app-title">Kubik Launcher</h3>
+        <p class="app-desc">Лаунчер Minecraft: сборки в один клик, моды с Modrinth и CurseForge, друзья, скины и Discord Rich Presence.</p>
+        <div class="app-foot"><span>Скачать</span><span>kubik-launcher</span></div>
+      </a>
+      <a class="app-card reveal" href="https://github.com/NAME-studio/PixelForge" target="_blank" rel="noopener">
+        <div class="app-top"><span class="app-tag">Electron · Windows</span><span class="app-arrow">↗</span></div>
+        <h3 class="app-title">PixelForge</h3>
+        <p class="app-desc">Редактор пиксель-арта: холст, палитра, слои и экспорт в PNG — без установки тяжёлых программ.</p>
+        <div class="app-foot"><span>Открыть</span><span>PixelForge</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+<style>
+  .apps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  @media(max-width:760px){.apps{grid-template-columns:1fr}}
+  .app-card{display:flex;flex-direction:column;gap:12px;padding:26px 24px;border:1px solid var(--line);border-radius:20px;background:var(--surface);text-decoration:none;color:inherit;transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease)}
+  .app-card:hover{border-color:var(--line-2);transform:translateY(-3px);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .app-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .app-tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .app-arrow{width:34px;height:34px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;transition:all .35s var(--ease)}
+  .app-card:hover .app-arrow{background:var(--accent);border-color:var(--accent);color:#0a0a0a}
+  .app-title{font-family:var(--display);font-size:26px;font-weight:600;letter-spacing:-.02em}
+  .app-desc{font-size:14.5px;line-height:1.6;color:var(--muted)}
+  .app-foot{display:flex;justify-content:space-between;gap:10px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+</style>
+
 <section id="contact">
   <div class="wrap">
     <div class="cta-block reveal">
@@ -720,6 +767,27 @@
     }, { passive: true });
   }
 })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ярослав",
+  "alternateName": "NAME",
+  "url": "https://name-studio.github.io/Portfolio/",
+  "jobTitle": "Веб-разработчик",
+  "knowsAbout": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Electron",
+    "Дизайн интерфейсов"
+  ],
+  "sameAs": [
+    "https://github.com/NAME-studio",
+    "https://name-studio.github.io/kubik-launcher/"
+  ]
+}
 </script>
 </body>
 </html>
